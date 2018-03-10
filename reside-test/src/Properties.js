@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import './Properties.css';
 
 class Properties extends Component {
+
     constructor(props) {
         super(props);
 
-        this.state = {properties: 'false'};
+        this.state = { properties: 'false', listings: 'false' };
     }
 
-    
+
 
     componentDidMount() {
         fetch('https://api.simplyrets.com/openhouses', {
@@ -17,17 +18,18 @@ class Properties extends Component {
                 'Authorization': 'Basic ' + btoa('simplyrets:simplyrets')
             }
         })
-        .then(response => {
-            return response.json();
-        })
-        .then(jsonProperties => {
-            console.log('PROPERTIES:', jsonProperties);
-            this.setState({properties: jsonProperties});
-        })
-        .catch(error => {
-            console.log(error);
-        });
+            .then(response => {
+                return response.json();
+            })
+            .then(jsonProperties => {
+                console.log('PROPERTIES:', jsonProperties);
+                this.setState({ properties: jsonProperties, listings: jsonProperties[0].listing });
+            })
+            .catch(error => {
+                console.log(error);
+            });
     }
+    
 
     // getProperties = () => {
 
@@ -47,6 +49,7 @@ class Properties extends Component {
     // }
 
     render() {
+        console.log(this.state);
         return (
             <div className="Properties">
                 Hello World!
