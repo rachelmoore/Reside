@@ -11,7 +11,6 @@ class Properties extends Component {
     
 
     componentDidMount() {
-        const parent = this;
         fetch('https://api.simplyrets.com/openhouses', {
             method: 'GET',
             headers: {
@@ -21,9 +20,9 @@ class Properties extends Component {
         .then(response => {
             return response.json();
         })
-        .then(json => {
-            console.log('PROPERTIES:', json);
-            this.setState({properties: 'test string'});
+        .then(jsonProperties => {
+            console.log('PROPERTIES:', jsonProperties);
+            this.setState({properties: jsonProperties});
         })
         .catch(error => {
             console.log(error);
@@ -51,7 +50,7 @@ class Properties extends Component {
         return (
             <div className="Properties">
                 Hello World!
-                {this.state.properties}
+                {this.state.properties[0].refreshments}
                 
             </div>
         );
