@@ -47,10 +47,11 @@ class Properties extends Component {
     // }
 
     render() {
+        let first = this.state.properties[0];
         return (
             <div className="Properties">
-                Hello World!
-                {this.state.properties[0].refreshments}
+                <p>Hello World!</p>
+                <p>{first.startTime}</p>
                 
             </div>
         );
