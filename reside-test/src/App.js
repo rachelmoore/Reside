@@ -10,10 +10,12 @@ class App extends Component {
       openhouses: {}
     };
     this.loadHomes = this.loadHomes.bind(this);
+    this.generateRandNum = this.generateRandNum.bind(this);
   }
 
   componentDidMount() {
   this.loadHomes();
+  this.generateRandNum();
 
     this.ref = base.syncState('openhouses', 
   {
@@ -41,10 +43,20 @@ class App extends Component {
       });
   }
 
+  generateRandNum() {
+    let randNum = localStorage.getItem('randomNumber');
+    if (randNum === null) {
+      randNum = Math.floor(Math.random() * 999999);
+      localStorage.setItem('randomNumber', randNum);
+    }
+    console.log(randNum);
+  }
+
 
   render() {
     return (
       <div className="App">
+        <p>Welcome! Your User Id is: {localStorage.getItem('randomNumber')}</p>
         <ul className="list-of-homes">
           {
             Object.keys(this.state.openhouses)
