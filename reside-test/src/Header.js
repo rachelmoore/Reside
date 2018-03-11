@@ -10,7 +10,7 @@ class Header extends Component {
                     <h1 className="logo-text">👩‍💻 Rachel's Real Estate</h1>
                 </div>
                 <div className="greeting">
-                    <p>Your User ID is 123456</p>
+                    <p>Welcome! Your User ID is {this.props.userid}</p>
                 </div>
             </div>
         );

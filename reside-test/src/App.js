@@ -57,10 +57,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header userid={localStorage.getItem('randomNumber')}/>
 
-        <p>Welcome! Your User Id is: {localStorage.getItem('randomNumber')}</p>
-        
         <ul className="list-of-homes">
           {
             Object.keys(this.state.openhouses)
