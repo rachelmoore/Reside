@@ -6,7 +6,7 @@ class Properties extends Component {
     render() {
         return (
             <li className="a-listing">
-                <img src={`${this.props.details.listing.photos[0]}`} alt={`Listing #${this.props.details.listing.mlsId}`} />
+                <img src={`${this.props.details.listing.photos[0]}`} alt={`MLS ID #${this.props.details.listing.mlsId}`} />
                 <p>Bedrooms: {this.props.details.listing.property.bedrooms}</p>
                 <p>Full Baths: {this.props.details.listing.property.bathsFull}</p>
                 <p>Half Baths: {this.props.details.listing.property.bathsHalf}</p>
