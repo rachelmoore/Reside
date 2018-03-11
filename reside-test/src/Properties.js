@@ -3,32 +3,47 @@ import './Properties.css';
 
 class Properties extends Component {
 
-    constructor(props) {
-        super(props);
+    // constructor(props) {
+    //     super(props);
+    // }
 
-        this.state = { properties: 'false', listings: 'false' };
-    }
+    // loadHomes() {
+    //     fetch('https://api.simplyrets.com/openhouses', {
+    //         method: 'GET',
+    //         headers: {
+    //             'Authorization': 'Basic ' + btoa('simplyrets:simplyrets')
+    //         }
+    //     })
+    //         .then(response => {
+    //             return response.json();
+    //         })
+    //         .then(jsonProperties => {
+    //             console.log('OPEN HOUSES:', jsonProperties);
+    //             this.setState({ openhouses: jsonProperties, listings: jsonProperties[0].listing });
+    //         })
+    //         .catch(error => {
+    //             console.log(error);
+    //         });
+    // }
 
-
-
-    componentDidMount() {
-        fetch('https://api.simplyrets.com/openhouses', {
-            method: 'GET',
-            headers: {
-                'Authorization': 'Basic ' + btoa('simplyrets:simplyrets')
-            }
-        })
-            .then(response => {
-                return response.json();
-            })
-            .then(jsonProperties => {
-                console.log('PROPERTIES:', jsonProperties);
-                this.setState({ properties: jsonProperties, listings: jsonProperties[0].listing });
-            })
-            .catch(error => {
-                console.log(error);
-            });
-    }
+    // componentDidMount() {
+    //     fetch('https://api.simplyrets.com/openhouses', {
+    //         method: 'GET',
+    //         headers: {
+    //             'Authorization': 'Basic ' + btoa('simplyrets:simplyrets')
+    //         }
+    //     })
+    //         .then(response => {
+    //             return response.json();
+    //         })
+    //         .then(jsonProperties => {
+    //             console.log('OPEN HOUSES:', jsonProperties);
+    //             this.setState({ openhouses: jsonProperties, listings: jsonProperties[0].listing });
+    //         })
+    //         .catch(error => {
+    //             console.log(error);
+    //         });
+    // }
     
 
     // getProperties = () => {
@@ -49,13 +64,13 @@ class Properties extends Component {
     // }
 
     render() {
-        console.log(this.state);
         return (
-            <div className="Properties">
-                Hello World!
-                {this.state.properties[0].refreshments}
-                
-            </div>
+            <li className="a-listing">
+                <p>Bedrooms: {this.props.details.listing.property.bedrooms}</p>
+                <p>Full Baths: {this.props.details.listing.property.bathsFull}</p>
+                <p>Half Baths: {this.props.details.listing.property.bathsHalf}</p>
+                <p>MLS ID: {this.props.details.listing.mlsId}</p>
+            </li>
         );
     }
 }
