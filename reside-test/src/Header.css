@@ -1,6 +1,7 @@
 
 .rre-header {
-    background-color: #3b3d3d;
+    /* background-image: url(http://residecorp.wpengine.com/wp-content/uploads/2017/09/Clients-Header-4-Compressed.jpg?id=4339);  */
+    background-color: black;
     color: white;
     display: flex;
     justify-content: space-between;

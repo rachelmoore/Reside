@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './Properties.css';
+import base from './base';
 
 class Properties extends Component {
     constructor() {
         super();
         this.convertDate = this.convertDate.bind(this);
         this.convertPrice = this.convertPrice.bind(this);
+        this.saveMlsId = this.saveMlsId.bind(this);
     }
 
     convertDate(date) {
@@ -15,6 +17,12 @@ class Properties extends Component {
 
     convertPrice(price) {
        return price.toLocaleString();
+    }
+
+    saveMlsId(userId, mlsId) {
+        console.log(mlsId);
+        console.log(this.props);
+        let testFirebase = base.push(userId, {data: mlsId });
     }
 
     render() {
@@ -49,6 +57,9 @@ class Properties extends Component {
                         </tr>
                     </tbody>
                 </table>
+                <button className="mlsid-button" onClick={() => this.saveMlsId(this.props.userid, this.props.details.listing.mlsId)}>
+                    Save MLS ID to User ID
+                </button>
             </li>
         );
     }
