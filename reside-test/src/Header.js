@@ -5,11 +5,11 @@ class Header extends Component {
 
     render() {
         return (
-            <div>
-                <div>
-                    <img src="https://www.residebrokerage.com/wp-content/uploads/2017/09/Reside-Logo-Grayscale.png" alt="Reside Logo" />
+            <div className="rre-header">
+                <div className="logo">
+                    <h1 className="logo-text">👩‍💻 Rachel's Real Estate</h1>
                 </div>
-                <div>
+                <div className="greeting">
                     <p>Your User ID is 123456</p>
                 </div>
             </div>
