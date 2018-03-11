@@ -7,7 +7,7 @@ class Header extends Component {
         return (
             <div>
                 <div>
-                    <img src="https://www.residebrokerage.com/wp-content/uploads/2017/09/Reside-Logo-Grayscale.png" />
+                    <img src="https://www.residebrokerage.com/wp-content/uploads/2017/09/Reside-Logo-Grayscale.png" alt="Reside Logo" />
                 </div>
                 <div>
                     <p>Your User ID is 123456</p>
