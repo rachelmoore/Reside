@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Properties from './Properties';
-// import base from './base';
+import base from './base';
 
 class App extends Component {
   constructor() {
@@ -12,13 +12,13 @@ class App extends Component {
     this.loadHomes = this.loadHomes.bind(this);
   }
 
-  // componentDidMount() {
-  //   this.ref = base.syncState('residetestrachelmoore', 
-  // {
-  //   context: this, 
-  //   state: 'openhouses'
-  // });
-  // }
+  componentDidMount() {
+    this.ref = base.syncState('residetestrachelmoore', 
+  {
+    context: this, 
+    state: 'openhouses'
+  });
+  }
 
   // componentWillMount() {
   //   this.ref = base.syncState('openhouses',
