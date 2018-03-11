@@ -22,14 +22,6 @@ class App extends Component {
   });
   }
 
-  // componentWillMount() {
-  //   this.ref = base.syncState('openhouses',
-  //   {
-  //     context: this, 
-  //     state: 'openhouses'
-  //   });
-  // }
-
   loadHomes() {
     fetch('https://api.simplyrets.com/openhouses', {
       method: 'GET',
