@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Properties from './Properties';
+import Header from './Header';
 import base from './base';
 
 class App extends Component {
@@ -56,7 +57,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header />
+
         <p>Welcome! Your User Id is: {localStorage.getItem('randomNumber')}</p>
+        
         <ul className="list-of-homes">
           {
             Object.keys(this.state.openhouses)
