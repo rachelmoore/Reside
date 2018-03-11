@@ -1,0 +1,19 @@
+
+.rre-header {
+    background-color: #3b3d3d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.greeting {
+
+}
