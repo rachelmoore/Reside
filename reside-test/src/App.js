@@ -13,7 +13,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.ref = base.syncState('residetestrachelmoore', 
+  this.loadHomes();
+
+    this.ref = base.syncState('openhouses', 
   {
     context: this, 
     state: 'openhouses'
@@ -51,7 +53,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <button onClick={this.loadHomes}>Load Homes!</button>
         <ul className="list-of-homes">
           {
             Object.keys(this.state.openhouses)
