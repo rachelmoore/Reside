@@ -32,6 +32,10 @@ class Properties extends Component {
                 <table className="properties-table">
                     <tbody>
                         <tr>
+                            <th>Attribute</th>
+                            <th>Value</th>
+                        </tr>
+                        <tr>
                             <td>Bedrooms:</td>
                             <td>{this.props.details.listing.property.bedrooms}</td>
                         </tr>
