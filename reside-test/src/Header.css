@@ -1,4 +1,16 @@
 
+.user-id {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('https://kevingueco.wpengine.com/wp-content/uploads/2017/06/top-bar-background.jpg');
+}
+
+.welcome {
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
 .rre-header {
     /* background-image: url(http://residecorp.wpengine.com/wp-content/uploads/2017/09/Clients-Header-4-Compressed.jpg?id=4339);  */
     background-color: black;
@@ -10,33 +22,36 @@
 
 .logo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .logo-top {
    font-family: 'Prata', serif;
     letter-spacing: 0.2em;
     font-size: 22px;
-    border: 2px solid white;
-    margin: 0px;
 }
 
 .logo-middle {
-    border: 2px solid yellow;
-    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
 }
 
 .logo-bottom {
-    border: 2px solid red;
-    padding-top: 0px;
-    margin-top: 0px;
-}
-/* .logo-text {
     font-family: 'Prata', serif;
     letter-spacing: 0.2em;
-    font-size: 52px;
-    border: 2px solid white;
-} */
+    font-size: 25px;
+}
+
+.logo-text {
+    padding-top: 10px;
+}
+
+.greeting {
+    padding-top: 50px;
+    padding-right: 20px;
+}
 
 
 

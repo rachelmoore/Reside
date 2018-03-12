@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Properties from './Properties';
 import Header from './Header';
+import Footer from './Footer';
 import base from './base';
 
 class App extends Component {
@@ -61,13 +62,16 @@ class App extends Component {
     return (
       <div className="App">
         <Header userid={localStorage.getItem('randomNumber')}/>
+        <div className="main">
+          <ul className="list-of-homes">
+            {
+              Object.keys(this.state.openhouses)
+                .map(key => <Properties key={key} index={key} details={this.state.openhouses[key]} userid={localStorage.getItem('randomNumber')}/>)
+            }
+          </ul>
+        </div>
 
-        <ul className="list-of-homes">
-          {
-            Object.keys(this.state.openhouses)
-              .map(key => <Properties key={key} index={key} details={this.state.openhouses[key]} userid={localStorage.getItem('randomNumber')}/>)
-          }
-        </ul>
+        <Footer />
       </div>
     );
   }
