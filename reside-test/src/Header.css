@@ -5,16 +5,38 @@
     color: white;
     display: flex;
     justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .logo {
     display: flex;
+    flex-direction: column;
 }
 
-.logo-text {
-    font-family: Arial, Helvetica, sans-serif;
+.logo-top {
+   font-family: 'Prata', serif;
+    letter-spacing: 0.2em;
+    font-size: 22px;
+    border: 2px solid white;
+    margin: 0px;
 }
 
-.greeting {
-
+.logo-middle {
+    border: 2px solid yellow;
+    margin: 0px;
 }
+
+.logo-bottom {
+    border: 2px solid red;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+/* .logo-text {
+    font-family: 'Prata', serif;
+    letter-spacing: 0.2em;
+    font-size: 52px;
+    border: 2px solid white;
+} */
+
+
+
