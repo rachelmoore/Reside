@@ -11,3 +11,8 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 }
+
+a {
+    color: #53C1DE;
+    text-decoration: none;
+}
