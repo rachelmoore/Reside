@@ -48,10 +48,6 @@ class Properties extends Component {
                             <td>{this.props.details.listing.property.bathsHalf}</td>
                         </tr>
                         <tr>
-                            <td>MLS ID:</td>
-                            <td>#{this.props.details.listing.mlsId}</td>
-                        </tr>
-                        <tr>
                             <td>List Date:</td>
                             <td>{this.convertDate(this.props.details.listing.listDate)}</td>
                         </tr>
