@@ -9,4 +9,13 @@
 
 .home-img {
   filter: grayscale(50%) brightness(100%) contrast(150%);
+  /* filter: sepia(60%) brightness(100%) contrast(120%); */
+}
+
+.a-listing {
+  background-color: white;
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
 }

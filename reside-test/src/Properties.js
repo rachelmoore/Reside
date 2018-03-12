@@ -55,11 +55,14 @@ class Properties extends Component {
                             <td>List Price:</td>
                             <td>${this.convertPrice(this.props.details.listing.listPrice)}</td>
                         </tr>
+                        <tr>
+                            <td><button className="mlsid-button" onClick={() => this.saveMlsId(this.props.userid, this.props.details.listing.mlsId)}>
+                                Save MLS ID to User ID
+                                </button></td>
+                            <td></td>
+                        </tr>
                     </tbody>
                 </table>
-                <button className="mlsid-button" onClick={() => this.saveMlsId(this.props.userid, this.props.details.listing.mlsId)}>
-                    Save MLS ID to User ID
-                </button>
             </li>
         );
     }
