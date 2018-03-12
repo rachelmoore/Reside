@@ -32,8 +32,8 @@ class Properties extends Component {
                 <table className="properties-table">
                     <tbody>
                         <tr>
-                            <th>Attribute</th>
-                            <th>Value</th>
+                            <th>MLS ID:</th>
+                            <th>#{this.props.details.listing.mlsId}</th>
                         </tr>
                         <tr>
                             <td>Bedrooms:</td>
