@@ -12,7 +12,7 @@ class Header extends Component {
                 <div className="rre-header">
                     <div className="logo">
                         <div className="logo-middle">
-                            <img className="logo-image" src="http://res.cloudinary.com/df9oqycdp/image/upload/v1520818744/sphynxwhitesquare100_r28bzj.png" alt="Rex Real Estate" />
+                            <img className="logo-image" src="http://res.cloudinary.com/df9oqycdp/image/upload/v1520825646/sphynxwhitesquare80_f74izi.png" alt="Rex Real Estate" />
                         </div>
                         <div className="logo-bottom">
                             <h5 className="logo-text">REX REAL ESTATE</h5>

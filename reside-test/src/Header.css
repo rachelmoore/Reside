@@ -25,14 +25,8 @@
     flex-direction: row;
 }
 
-.logo-top {
-   font-family: 'Prata', serif;
-    letter-spacing: 0.2em;
-    font-size: 22px;
-}
-
 .logo-middle {
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 5px;
@@ -42,10 +36,11 @@
     font-family: 'Prata', serif;
     letter-spacing: 0.2em;
     font-size: 25px;
+    padding-left: 5px;
 }
 
 .logo-text {
-    padding-top: 10px;
+    padding-top: 8px;
 }
 
 .greeting {
