@@ -29,7 +29,7 @@ class Properties extends Component {
         return (
             <li className="a-listing">
                 <img className="home-img" src={`${this.props.details.listing.photos[0]}`} alt={`MLS ID #${this.props.details.listing.mlsId}`} />
-                <table>
+                <table className="properties-table">
                     <tbody>
                         <tr>
                             <td>Bedrooms:</td>

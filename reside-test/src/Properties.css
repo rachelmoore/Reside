@@ -35,3 +35,11 @@
   color: #53C1DE;
   cursor: pointer;
 }
+
+tr:nth-child(even){background-color: #f5f5f5;}
+
+.properties-table {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
