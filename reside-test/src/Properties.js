@@ -22,7 +22,7 @@ class Properties extends Component {
     saveMlsId(userId, mlsId) {
         console.log(mlsId);
         console.log(this.props);
-        let testFirebase = base.push(userId, {data: mlsId });
+        base.push(userId, {data: mlsId });
     }
 
     render() {
