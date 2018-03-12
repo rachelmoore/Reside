@@ -1,4 +1,6 @@
 
+![Rex Real Estate](http://res.cloudinary.com/df9oqycdp/image/upload/v1520829370/rexrealestate1_rzzy1y.png)
+
 
 ## Instructions to run on your local machine:
 
